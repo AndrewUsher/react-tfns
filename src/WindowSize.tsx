@@ -1,27 +1,27 @@
-import { debounce } from "debounce"
-import React, { useEffect, useState } from "react"
+import { debounce } from 'debounce'
+import React, { useEffect, useState } from 'react'
 
-function useWindowSize() {
+function useWindowSize () {
   const [state, setState] = useState({
     height: 0,
-    width: 0,
+    width: 0
   })
 
   const handleResize = () =>
     setState({
       height: window.innerHeight,
-      width: window.innerWidth,
+      width: window.innerWidth
     })
 
   useEffect(() => {
     setState({
       height: window.innerHeight,
-      width: window.innerWidth,
+      width: window.innerWidth
     })
-    window.addEventListener("resize", handleResize)
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      window.removeEventListener("resize", handleResize)
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
 
@@ -35,8 +35,8 @@ const WindowSize = ({ children, render }) => {
   } else if (children) {
     return children({ height, width })
   } else {
-    return null
+    return undefined
   }
 }
 
-export default WindowSize
+export { WindowSize }

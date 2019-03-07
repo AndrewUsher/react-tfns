@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react"
 
 function useLocale() {
   const [state, setState] = useState({ locales: null })
   useEffect(() => {
-    if (typeof navigator !== 'undefined') {
+    if (typeof navigator !== "undefined") {
       setState({
-        locales: navigator.languages || navigator.language
+        locales: navigator.languages || navigator.language,
       })
     }
   }, [])

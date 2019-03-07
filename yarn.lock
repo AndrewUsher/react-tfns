@@ -673,6 +673,11 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@drewster/tslint-config-drewster@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@drewster/tslint-config-drewster/-/tslint-config-drewster-1.0.0.tgz#90958f00fd232d6c21c6dee92ad8cdce0ae49266"
+  integrity sha512-aO12tgj2qrQI45hveYa5yRGI9rqC6eiOvZ/bXo1y7JceNg8xJMqIPBlBAwh42qyBBeflK4PcVkvNiZordcjfPg==
+
 "@types/debounce@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@types/debounce/-/debounce-1.2.0.tgz#9ee99259f41018c640b3929e1bb32c3dcecdb192"

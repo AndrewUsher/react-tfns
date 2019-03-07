@@ -9,6 +9,7 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
+    "@drewster/tslint-config-drewster": "^1.0.0",
     "react": "^16.8.4",
     "rollup": "^1.4.1",
     "rollup-plugin-babel": "^4.3.2",

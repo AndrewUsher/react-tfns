@@ -58,7 +58,7 @@ function useGeoPosition() {
   return state
 }
 
-const GeoPosition = ({ children, render }) => {
+const GeoPosition = ({ children, render }: GeoPositionProps) => {
   const geoPositionData = useGeoPosition()
   if (render) {
     return render(geoPositionData)

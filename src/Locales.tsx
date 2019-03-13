@@ -1,23 +1,32 @@
 import React, { useEffect, useState } from 'react'
 
-function useLocale () {
-  const [state, setState] = useState({ locales: undefined })
+type LocaleHookTypes = {
+  locale: string | undefined
+}
+
+type LocaleProps = {
+  children?: (props: LocaleHookTypes) => JSX.Element
+  render?: (props: LocaleHookTypes) => JSX.Element
+}
+
+function useLocale() {
+  const [state, setState] = useState({ locale: undefined })
   useEffect(() => {
     if (typeof navigator !== 'undefined') {
       setState({
-        locales: navigator.languages || navigator.language
+        locale: navigator.language
       })
     }
   }, [])
   return state
 }
 
-const Locales = ({ children, render }) => {
-  const { locales } = useLocale()
+const Locales = ({ children, render }: LocaleProps) => {
+  const { locale } = useLocale()
   if (render) {
-    return render({ locales })
+    return render({ locale })
   } else if (children) {
-    return children({ locales })
+    return children({ locale })
   } else {
     return undefined
   }

@@ -32,7 +32,7 @@ function useNetwork(): INetworkState {
       window.removeEventListener('online', toggle)
       window.removeEventListener('offline', toggle)
     }
-  })
+  }, [])
 
   return state
 }

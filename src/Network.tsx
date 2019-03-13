@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react'
 
-function useNetwork() {
+interface INetworkState {
+  offlineAt: Date | undefined
+  online: boolean
+}
+
+interface INetworkProps {
+  children?: (props: INetworkState) => JSX.Element
+  render?: (props: INetworkState) => JSX.Element
+}
+function useNetwork(): INetworkState {
   const [state, setState] = useState({
     offlineAt: undefined,
     online: navigator.onLine
@@ -24,10 +33,11 @@ function useNetwork() {
       window.removeEventListener('offline', toggle)
     }
   })
+
   return state
 }
 
-const Network = ({ children, render }) => {
+const Network = ({ children, render }: INetworkProps) => {
   const { offlineAt, online } = useNetwork()
   if (render) {
     return render({ offlineAt, online })

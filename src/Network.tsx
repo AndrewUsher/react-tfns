@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react'
 
-function useNetwork () {
+function useNetwork() {
   const [state, setState] = useState({
     offlineAt: undefined,
-    online: false
+    online: navigator.onLine
   })
 
-  function toggle () {
+  function toggle() {
     setState(s => ({
       ...s,
-      ...(!s.online && { offlineAt: new Date() }),
+      ...(s.online && { offlineAt: new Date() }),
+      ...(!s.online && { offlineAt: undefined }),
       online: !s.online
     }))
   }
@@ -36,3 +37,5 @@ const Network = ({ children, render }) => {
     return undefined
   }
 }
+
+export { Network }

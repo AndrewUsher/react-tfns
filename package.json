@@ -10,7 +10,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@drewster/tslint-config-drewster": "^1.0.0",
-    "rollup": "^1.4.1",
+    "rollup": "^1.7.4",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-typescript": "^1.0.0",

@@ -12,7 +12,7 @@
     "@drewster/tslint-config-drewster": "^1.0.0",
     "jest": "^24.7.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.9.0",
     "react-testing-library": "^6.1.2",
     "rollup": "^1.4.1",
     "rollup-plugin-babel": "^4.3.2",

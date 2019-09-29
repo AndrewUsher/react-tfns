@@ -20,7 +20,7 @@
     "rollup-plugin-typescript": "^1.0.1",
     "rollup-plugin-typescript2": "^0.24.3",
     "tslib": "^1.9.3",
-    "tslint": "^5.14.0",
+    "tslint": "^5.20.0",
     "typescript": "^3.3.3333"
   },
   "dependencies": {

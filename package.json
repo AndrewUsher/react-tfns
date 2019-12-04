@@ -21,7 +21,7 @@
     "rollup-plugin-typescript2": "^0.24.3",
     "tslib": "^1.9.3",
     "tslint": "^5.20.0",
-    "typescript": "^3.6.3"
+    "typescript": "^3.7.3"
   },
   "dependencies": {
     "@types/debounce": "^1.2.0",

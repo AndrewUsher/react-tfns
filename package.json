@@ -14,7 +14,7 @@
     "jest": "^24.9.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
-    "rollup": "^1.22.0",
+    "rollup": "^1.27.9",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-node-resolve": "^4.2.4",
     "rollup-plugin-typescript": "^1.0.1",

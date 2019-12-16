@@ -10,7 +10,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.6.0",
     "@drewster/tslint-config-drewster": "^1.0.0",
-    "@testing-library/react": "^9.2.0",
+    "@testing-library/react": "^9.4.0",
     "jest": "^24.9.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",

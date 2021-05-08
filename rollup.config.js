@@ -3,7 +3,7 @@ import nodeResolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import pkg from './package.json'
 
-const packageName = pkg.name.replace('@drewster', '')
+const packageName = pkg.name.replace('@drewster/', '')
 
 export default {
   input: 'src/index.ts',
@@ -15,6 +15,11 @@ export default {
     {
       file: `dist/${packageName}.cjs.js`,
       format: 'cjs'
+    },
+    {
+      name: 'ReactTFNS',
+      file: `dist/${packageName}.umd.js`,
+      format: 'umd'
     }
   ],
   plugins: [

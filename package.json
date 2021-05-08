@@ -29,7 +29,7 @@
     "debounce": "^1.2.1"
   },
   "peerDependencies": {
-    "react": "^16.8.4"
+    "react": "^17.0.0"
   },
   "scripts": {
     "build": "NODE_ENV=production rollup -c"

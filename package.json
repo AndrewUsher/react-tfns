@@ -11,7 +11,7 @@
     "@babel/preset-typescript": "7.13.0",
     "@drewster/tslint-config-drewster": "1.0.0",
     "@testing-library/react": "11.2.6",
-    "jest": "26.6.3",
+    "jest": "29.7.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "rollup": "2.51.0",
